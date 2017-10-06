@@ -21,26 +21,33 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLabel.text = "Answer\(Double(Text1.text!)! + Double(Text2.text!)!)"
-    
+        let addition = true
+        
+        if addition {
+            
+            theLabel.text = "Answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
+        } else {
+            theLabel.text = "Answer: \(Double(Text1.text!)! - Double(Text2.text!)!)"
+        }
+        
     }
     
     
-        
+    
     
     
     override func viewDidLoad() {
-            super.viewDidLoad()
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
-
+    
     override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-
+        
     }
-
-
-
+    
+    
+    
 }
